@@ -1,54 +1,73 @@
 * {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
     font-family: 'Alice', serif;
-}
-
-
-body {
-    background-image: url(img/main-image3x.png);
-    position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #573824;
-}
-
-h1 {
-    font-size: 40px;
-    line-height: 140%;
-    color: #291B1A;
-}
-
-h2 {
-    font-size: 24px;
-    line-height: 150%;
-    color: #291B1A;
-}
-
-#paragrafo {
-    font-size: 16px;
     line-height: 150%;
     color: #573A37;
 }
 
+
+body {
+    background-image: url(img/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box; /* faz com que a largura do container seja a largura total, incluindo padding e borda */
+    background-color: #F0E8C2;
+    border-radius: 24px;
+    padding: 24px;
+    width: 800px;
+    margin: 48px auto 28px; /* centraliza o container, 48px na parte de cima e embaixo e automatico tamanho igual dos lados */
 }
 
 #imgCupcake {
-    border-radius: 24px;
+    border-radius: 16px;
 }
 
 main {
-    background-color: #F0E8C2;
-    border-radius: 24px;
-    padding: 20px;
-    width: 52%;
-    margin: 40px;
+    padding: 24px;
+}
+
+section + section {
+    margin-top: 24px;
+}
+#textoInicial p + p{
+    margin-top: 12px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h1, h2 {
+    line-height: 150%;
+    color: #291B1A;
+    margin-bottom: 4px;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+#paragrafo {
+    font-size: 16px;
 }
 
 footer {
     text-align: center;
     color: #F0E8C2;
-    margin-bottom: 50px;
+    padding-bottom: 48px;
+}
+
+footer img {
+    vertical-align: middle;
 }
